@@ -1,0 +1,30 @@
+# Dependency directories
+node_modules/
+venv/
+env/
+
+# Build artifacts
+dist/
+build/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+.env.local
+
+# Git
+.git/
+.gitignore
+
+# Project specific
+faiss_index/
+*.db
+*.sqlite3
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,62 @@
+# Node modules & build
+node_modules/
+dist/
+build/
+
+# Python virtualenvs & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+venv_test/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Secrets & Environment variables
+.env
+.env.*
+!.env.example
+
+# Databases & local test output
+*.db
+*.sqlite3
+*output.txt
+
+# Large Data, Raw PDFs, Archives, Vector Indexes
+data/raw/
+data/samples/
+storage/raw/
+backend/storage/raw/
+vector_store/
+*.pdf
+*.tar
+*.tar.gz
+*.zip
+*.parquet
+*.faiss
+*.pkl
+*.bin
+*.safetensors
+
+# Logs & temp
+logs/
+*.log
+research_results.txt
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
