@@ -173,10 +173,16 @@ const ChatInterface = ({ onViewSource }) => {
             <div className="shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
               <Bot size={14} />
             </div>
-            <div className="mt-1 flex items-center gap-1.5 h-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary/50 animate-bounce" style={{ animationDelay: '0ms' }} />
-              <span className="w-1.5 h-1.5 rounded-full bg-primary/50 animate-bounce" style={{ animationDelay: '150ms' }} />
-              <span className="w-1.5 h-1.5 rounded-full bg-primary/50 animate-bounce" style={{ animationDelay: '300ms' }} />
+            <div className="flex flex-col gap-1 mt-1">
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1.5 h-6">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 animate-bounce" style={{ animationDelay: '0ms' }} />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 animate-bounce" style={{ animationDelay: '150ms' }} />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/50 animate-bounce" style={{ animationDelay: '300ms' }} />
+                </div>
+                <span className="text-xs text-muted font-medium">Researching Supreme Court precedents & verifying citations...</span>
+              </div>
+              <span className="text-[11px] text-muted/70">Executing 3-way retrieval &rarr; Nemotron rerank &rarr; grounded generation &rarr; quote gate verification (~1–2 minutes).</span>
             </div>
           </div>
         )}
